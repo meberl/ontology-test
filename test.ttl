@@ -4,4 +4,4 @@
 @prefix ext: <ex:test>.
 
 ext:address rdfs:label "address";
-    schema:name "address"@en;
+    schema:name "address"@en.
