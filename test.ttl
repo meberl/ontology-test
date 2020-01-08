@@ -1,13 +1,30 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix schema: <http://schema.org/>.
-@prefix ext: <ex:test/>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
 
-ext:address rdfs:label "address";
-    schema:name "Address"@en;
-    schema:name "Adresse"@de.
+@prefix : <ex:test/>.
 
-ext:Person
-	a rdfs:Class ;
-	rdfs:label "Person"@en ;
-	rdfs:comment "A person"@en .
+<ex:test> vann:preferredNamespaceUri "ex:test/";
+    schema:description "tt"@en;
+    schema:identifier "urn:uuid:7c0debb5-230a-afce-e9dd-cb970370e47d";
+    schema:name "test2"@en;
+    a rdf:Resource, owl:Ontology;
+    rdfs:label "ex:test".
+:address schema:name "Address"@en, "Adresse"@de;
+    a rdf:Resource;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "address".
+:Organization schema:description "An organization"@en;
+    schema:name "Organization"@en;
+    a rdf:Resource, rdfs:Class;
+    rdfs:label "Organization".
+:Person schema:description "A person"@en;
+    schema:name "Person"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "Person".
