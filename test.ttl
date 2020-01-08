@@ -13,9 +13,9 @@
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
     voaf:classNumber "2"^^xs:integer;
-    schema:description "tt"@en;
-    schema:identifier "urn:uuid:7c0debb5-230a-afce-e9dd-cb970370e47d";
-    schema:name "test2"@en;
+    schema:description "A test ontology."@en;
+    schema:identifier "urn:uuid:2fe36179-4bd3-b574-e9f6-5a53ac68d83e";
+    schema:name "Test"@en;
     a rdf:Resource, owl:Ontology;
     rdfs:label "ex:test".
 :address schema:name "Address"@en, "Adresse"@de;
