@@ -1,30 +1,93 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfa: <http://www.w3.org/ns/rdfa#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix schema: <http://schema.org/>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xs: <http://www.w3.org/2001/XMLSchema#>.
+@prefix voaf: <http://purl.org/vocommons/voaf#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
 @prefix : <ex:test/>.
 
-<ex:test> <http://purl.org/vocab/vann/preferredNamespaceUri> <ex:test/>;
-    <http://purl.org/vocommons/voaf#classNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
-    <http://schema.org/description> "Another test ontology."@en;
-    <http://schema.org/identifier> "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
-    <http://schema.org/name> "Test"@en;
-    a rdf:Resource, <http://www.w3.org/2002/07/owl#Ontology>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "ex:test".
-<ex:test/_ns0> <http://schema.org/name> "rdf"@en;
-    a rdf:Resource, <http://www.w3.org/ns/rdfa#PrefixMapping>;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <ex:test>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "_ns0";
-    <http://www.w3.org/ns/rdfa#prefix> "rdf";
-    <http://www.w3.org/ns/rdfa#uri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-:address <http://schema.org/name> "Address"@en, "Adresse"@de;
+<ex:test> vann:preferredNamespaceUri <ex:test/>;
+    voaf:classNumber "2"^^xs:integer;
+    schema:description "The definitive test ontology."@en;
+    schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
+    schema:name "Test"@en;
+    a rdf:Resource, owl:Ontology;
+    rdfs:label "ex:test".
+<ex:test/_ns0> schema:name "rdf"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns0";
+    rdfa:prefix "rdf";
+    rdfa:uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+<ex:test/_ns1> schema:name "rdfa"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns1";
+    rdfa:prefix "rdfa";
+    rdfa:uri <http://www.w3.org/ns/rdfa#>.
+<ex:test/_ns2> schema:name "rdfs"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns2";
+    rdfa:prefix "rdfs";
+    rdfa:uri <http://www.w3.org/2000/01/rdf-schema#>.
+<ex:test/_ns3> schema:name "owl"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns3";
+    rdfa:prefix "owl";
+    rdfa:uri <http://www.w3.org/2002/07/owl#>.
+<ex:test/_ns4> schema:name "schema"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns4";
+    rdfa:prefix "schema";
+    rdfa:uri <http://schema.org/>.
+<ex:test/_ns5> schema:name "sh"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns5";
+    rdfa:prefix "sh";
+    rdfa:uri <http://www.w3.org/ns/shacl#>.
+<ex:test/_ns6> schema:name "skos"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns6";
+    rdfa:prefix "skos";
+    rdfa:uri <http://www.w3.org/2004/02/skos/core#>.
+<ex:test/_ns7> schema:name "xs"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns7";
+    rdfa:prefix "xs";
+    rdfa:uri <http://www.w3.org/2001/XMLSchema#>.
+<ex:test/_ns8> schema:name "voaf"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns8";
+    rdfa:prefix "voaf";
+    rdfa:uri <http://purl.org/vocommons/voaf#>.
+<ex:test/_ns9> schema:name "vann"@en;
+    a rdf:Resource, rdfa:PrefixMapping;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "_ns9";
+    rdfa:prefix "vann";
+    rdfa:uri <http://purl.org/vocab/vann/>.
+:address schema:name "Address"@en, "Adresse"@de;
     a rdf:Resource;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <ex:test>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "address".
-:Organization <http://schema.org/description> "An organization too"@en;
-    <http://schema.org/name> "Organization"@en;
-    a rdf:Resource, <http://www.w3.org/2000/01/rdf-schema#Class>;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <ex:test>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Organization".
-:Person <http://schema.org/description> "A person"@en;
-    <http://schema.org/name> "Person"@en;
-    a <http://www.w3.org/2000/01/rdf-schema#Class>;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <ex:test>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Person".
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "address".
+:Organization schema:description "An organization too"@en;
+    schema:name "Organization"@en;
+    a rdf:Resource, rdfs:Class;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "Organization".
+:Person schema:description "A person"@en;
+    schema:name "Person"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "Person".
