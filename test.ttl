@@ -1,4 +1,3 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix schema: <http://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
@@ -8,115 +7,111 @@
 @prefix vann: <http://purl.org/vocab/vann/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfa: <http://www.w3.org/ns/rdfa#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix : <ex:test/>.
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
     voaf:classNumber "2"^^xs:integer;
-    schema:description "The definitive test ontology."@en;
+    schema:description "The definitive test ontology.."@en;
     schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
     schema:name "Test"@en;
     a rdf:Resource, owl:Ontology;
     rdfs:label "ex:test".
-<ex:test/_ns0> schema:name "rdfs"@en;
+<ex:test/_ns0> schema:name "owl"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns0";
-    rdfa:prefix "rdfs".
-<ex:test/_ns1> schema:name "owl"@en;
+    rdfa:prefix "owl".
+<ex:test/_ns1> schema:name "schema"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns1";
-    rdfa:prefix "owl".
-<ex:test/_ns10> schema:name "rdfs"@en;
+    rdfa:prefix "schema".
+<ex:test/_ns10> schema:name "owl"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns10";
-    rdfa:prefix "rdfs";
-    rdfa:uri <http://www.w3.org/2000/01/rdf-schema#>.
-<ex:test/_ns11> schema:name "owl"@en;
+    rdfa:prefix "owl";
+    rdfa:uri <http://www.w3.org/2002/07/owl#>.
+<ex:test/_ns11> schema:name "schema"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns11";
-    rdfa:prefix "owl";
-    rdfa:uri <http://www.w3.org/2002/07/owl#>.
-<ex:test/_ns12> schema:name "schema"@en;
+    rdfa:prefix "schema";
+    rdfa:uri <http://schema.org/>.
+<ex:test/_ns12> schema:name "sh"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns12";
-    rdfa:prefix "schema";
-    rdfa:uri <http://schema.org/>.
-<ex:test/_ns13> schema:name "sh"@en;
+    rdfa:prefix "sh";
+    rdfa:uri <http://www.w3.org/ns/shacl#>.
+<ex:test/_ns13> schema:name "skos"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns13";
-    rdfa:prefix "sh";
-    rdfa:uri <http://www.w3.org/ns/shacl#>.
-<ex:test/_ns14> schema:name "skos"@en;
+    rdfa:prefix "skos";
+    rdfa:uri <http://www.w3.org/2004/02/skos/core#>.
+<ex:test/_ns14> schema:name "xs"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns14";
-    rdfa:prefix "skos";
-    rdfa:uri <http://www.w3.org/2004/02/skos/core#>.
-<ex:test/_ns15> schema:name "xs"@en;
+    rdfa:prefix "xs";
+    rdfa:uri <http://www.w3.org/2001/XMLSchema#>.
+<ex:test/_ns15> schema:name "voaf"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns15";
-    rdfa:prefix "xs";
-    rdfa:uri <http://www.w3.org/2001/XMLSchema#>.
-<ex:test/_ns16> schema:name "voaf"@en;
+    rdfa:prefix "voaf";
+    rdfa:uri <http://purl.org/vocommons/voaf#>.
+<ex:test/_ns16> schema:name "vann"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns16";
-    rdfa:prefix "voaf";
-    rdfa:uri <http://purl.org/vocommons/voaf#>.
-<ex:test/_ns17> schema:name "vann"@en;
-    a rdf:Resource, rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
-    rdfs:label "_ns17";
     rdfa:prefix "vann";
     rdfa:uri <http://purl.org/vocab/vann/>.
-<ex:test/_ns2> schema:name "schema"@en;
+<ex:test/_ns2> schema:name "sh"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns2";
-    rdfa:prefix "schema".
-<ex:test/_ns3> schema:name "sh"@en;
+    rdfa:prefix "sh".
+<ex:test/_ns3> schema:name "skos"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns3";
-    rdfa:prefix "sh".
-<ex:test/_ns4> schema:name "skos"@en;
+    rdfa:prefix "skos".
+<ex:test/_ns4> schema:name "xs"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns4";
-    rdfa:prefix "skos".
-<ex:test/_ns5> schema:name "xs"@en;
+    rdfa:prefix "xs".
+<ex:test/_ns5> schema:name "voaf"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns5";
-    rdfa:prefix "xs".
-<ex:test/_ns6> schema:name "voaf"@en;
+    rdfa:prefix "voaf".
+<ex:test/_ns6> schema:name "vann"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns6";
-    rdfa:prefix "voaf".
-<ex:test/_ns7> schema:name "vann"@en;
+    rdfa:prefix "vann".
+<ex:test/_ns7> schema:name "rdf"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns7";
-    rdfa:prefix "vann".
-<ex:test/_ns8> schema:name "rdf"@en;
+    rdfa:prefix "rdf";
+    rdfa:uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+<ex:test/_ns8> schema:name "rdfa"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns8";
-    rdfa:prefix "rdf";
-    rdfa:uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-<ex:test/_ns9> schema:name "rdfa"@en;
+    rdfa:prefix "rdfa";
+    rdfa:uri <http://www.w3.org/ns/rdfa#>.
+<ex:test/_ns9> schema:name "rdfs"@en;
     a rdf:Resource, rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "_ns9";
-    rdfa:prefix "rdfa";
-    rdfa:uri <http://www.w3.org/ns/rdfa#>.
+    rdfa:prefix "rdfs";
+    rdfa:uri <http://www.w3.org/2000/01/rdf-schema#>.
 :address schema:name "Address"@en, "Adresse"@de;
     a rdf:Resource;
     rdfs:isDefinedBy <ex:test>;
