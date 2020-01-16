@@ -16,7 +16,8 @@
     schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
     schema:name "Test"@en;
     a rdf:Resource, owl:Ontology;
-    rdfs:label "ex:test".
+    rdfs:label "ex:test";
+    owl:imports <http://schema.org/>.
 <ex:test/_ns0> schema:name "rdf"@en;
     a rdfa:PrefixMapping;
     rdfs:isDefinedBy <ex:test>;
