@@ -105,7 +105,7 @@
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Person";
     rdfs:subClassOf :Thing.
-:Test schema:description "A test class."@en;
+:Test schema:description "A test class.."@en;
     schema:name "Test"@en;
     a rdfs:Class;
     rdfs:isDefinedBy <ex:test>;
