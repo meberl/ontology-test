@@ -12,7 +12,7 @@
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
     voaf:classNumber "5"^^xs:integer;
-    schema:description "The nearly definitive test ontology."@en;
+    schema:description "The real definitive test ontology."@en;
     schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
     schema:name "Test"@en;
     a rdf:Resource, owl:Ontology;
@@ -77,7 +77,7 @@
     rdfs:label "_ns9";
     rdfa:prefix "vann";
     rdfa:uri <http://purl.org/vocab/vann/>.
-:address schema:name "Address"@en, "Adresse"@de;
+:address schema:name "Adresse"@de, "Address"@en;
     a rdf:Resource;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "address".
