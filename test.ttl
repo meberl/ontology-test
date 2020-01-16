@@ -11,7 +11,7 @@
 @prefix : <ex:test/>.
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
-    voaf:classNumber "5"^^xs:integer;
+    voaf:classNumber "6"^^xs:integer;
     schema:description "The real definitive test ontology."@en;
     schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
     schema:name "Test"@en;
@@ -104,6 +104,12 @@
     a rdfs:Class;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Person";
+    rdfs:subClassOf :Thing.
+:Test schema:description "A test class."@en;
+    schema:name "Test"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "Test";
     rdfs:subClassOf :Thing.
 :Thing schema:description "A thing."@en;
     schema:name "Thing"@en;
