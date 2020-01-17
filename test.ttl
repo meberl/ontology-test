@@ -12,6 +12,7 @@
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
     voaf:classNumber "5"^^xs:integer;
+    voaf:propertyNumber "1"^^xs:integer;
     schema:description "The absolute definitive test ontology. Now for real. Really."@en;
     schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
     schema:name "Test"@en;
@@ -94,6 +95,15 @@
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Device";
     rdfs:subClassOf :Thing.
+:FirstName schema:description "A name given to a person."@en;
+    schema:name "firstName"@en;
+    a rdf:Property;
+    rdfs:domain :Person;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "FirstName";
+    rdfs:range xs:string;
+    sh:maxCount "1"^^xs:integer;
+    sh:minCount "1"^^xs:integer.
 :Organization schema:description "An organization too"@en;
     schema:name "Organization"@en;
     a rdf:Resource, rdfs:Class;
