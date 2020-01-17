@@ -12,7 +12,7 @@
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
     voaf:classNumber "5"^^xs:integer;
-    voaf:propertyNumber "1"^^xs:integer;
+    voaf:propertyNumber "2"^^xs:integer;
     schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-17T14:09:08.000Z"^^xs:dateTime;
     schema:description "The absolute definitive test ontology. Reloaded."@en;
@@ -103,6 +103,17 @@
     rdfs:domain :Person;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "FirstName";
+    rdfs:range xs:string;
+    sh:maxCount "1"^^xs:integer;
+    sh:minCount "1"^^xs:integer.
+:Id schema:dateCreated "2020-01-17T14:08:53.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-17T14:08:53.000Z"^^xs:dateTime;
+    schema:description "A sequence of characters which can be used to identify the thing."@en;
+    schema:name "id"@en;
+    a rdf:Property;
+    rdfs:domain :Thing;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "Id";
     rdfs:range xs:string;
     sh:maxCount "1"^^xs:integer;
     sh:minCount "1"^^xs:integer.
