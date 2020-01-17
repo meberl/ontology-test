@@ -13,7 +13,9 @@
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
     voaf:classNumber "5"^^xs:integer;
     voaf:propertyNumber "1"^^xs:integer;
-    schema:description "The absolute definitive test ontology. Now for real. Really."@en;
+    schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-17T11:15:00.000Z"^^xs:dateTime;
+    schema:description "The absolute definitive test ontology. Now with dates."@en;
     schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
     schema:name "Test"@en;
     a rdf:Resource, owl:Ontology;
