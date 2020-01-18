@@ -14,8 +14,8 @@
     voaf:classNumber "5"^^xs:integer;
     voaf:propertyNumber "2"^^xs:integer;
     schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
-    schema:dateModified "2020-01-17T14:28:23.000Z"^^xs:dateTime;
-    schema:description "The absolute definitive test ontology."@en;
+    schema:dateModified "2020-01-18T16:00:24.000Z"^^xs:dateTime;
+    schema:description "The absolute definitive test ontology. Forever."@en;
     schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
     schema:name "Test"@en;
     a rdf:Resource, owl:Ontology;
