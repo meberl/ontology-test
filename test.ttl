@@ -11,7 +11,7 @@
 @prefix : <ex:test/>.
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
-    voaf:classNumber "6"^^xs:integer;
+    voaf:classNumber "5"^^xs:integer;
     voaf:propertyNumber "2"^^xs:integer;
     schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-19T16:03:39.000Z"^^xs:dateTime;
@@ -130,14 +130,6 @@
     a rdf:Resource, rdfs:Class;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Organization";
-    rdfs:subClassOf :Thing.
-:Person schema:dateCreated "2020-01-19T19:10:25.000Z"^^xs:dateTime;
-    schema:dateModified "2020-01-19T19:10:25.000Z"^^xs:dateTime;
-    schema:description "A person."@en;
-    schema:name "Person"@en;
-    a rdfs:Class;
-    rdfs:isDefinedBy <ex:test>;
-    rdfs:label "Person";
     rdfs:subClassOf :Thing.
 :Thing schema:description "A thing."@en;
     schema:name "Thing"@en;
