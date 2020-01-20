@@ -86,8 +86,8 @@
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "address".
 :Airplane schema:dateCreated "2020-01-20T12:53:20.000Z"^^xs:dateTime;
-    schema:dateModified "2020-01-20T12:53:20.000Z"^^xs:dateTime;
-    schema:description "An airplane."@en;
+    schema:dateModified "2020-01-20T12:56:39.000Z"^^xs:dateTime;
+    schema:description "A device which carries people or freight through the air."@en;
     schema:name "Airplane"@en;
     a rdfs:Class;
     rdfs:isDefinedBy <ex:test>;
