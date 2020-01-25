@@ -12,14 +12,15 @@
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
     voaf:classNumber "7"^^xs:integer;
-    voaf:instanceNumber "4"^^xs:integer;
+    voaf:instanceNumber "6"^^xs:integer;
     voaf:propertyNumber "7"^^xs:integer;
     schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
-    schema:dateModified "2020-01-19T16:03:39.000Z"^^xs:dateTime;
-    schema:description "The absolute definitive test ontology..."@en;
+    schema:dateModified "2020-01-25T14:53:26.000Z"^^xs:dateTime;
+    schema:description "The absolute definitive test ontology.."@en;
     schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
     schema:name "Test"@en;
     a rdf:Resource, owl:Ontology;
+    rdfs:isDefinedBy <>;
     rdfs:label "ex:test";
     owl:imports <http://schema.org/>.
 <ex:test/_ns0> schema:name "rdf"@en;
@@ -127,14 +128,14 @@
     rdfs:range xs:dateTime;
     sh:maxCount "1"^^xs:integer;
     sh:minCount "1"^^xs:integer.
-:Bob :Age "37";
-    :BirthDate "2020-01-25T10:37:27.320Z";
-    :Id "bobby";
+:Bob :Age "37"^^xs:int;
+    :BirthDate "2020-01-25T18:15:28.000Z"^^xs:dateTime;
+    :Id "bob";
     :Knows :Alice, :Bob;
     :LastName "1";
     schema:description "A person."@en;
     schema:name "Bob"@en;
-    a :Thing, :Person;
+    a :Person, :Thing;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Bob".
 :Car schema:dateCreated "2020-01-18T20:46:49.000Z"^^xs:dateTime;
