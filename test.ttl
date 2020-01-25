@@ -11,9 +11,9 @@
 @prefix : <ex:test/>.
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
-    voaf:classNumber "6"^^xs:integer;
-    voaf:instanceNumber "2"^^xs:integer;
-    voaf:propertyNumber "2"^^xs:integer;
+    voaf:classNumber "7"^^xs:integer;
+    voaf:instanceNumber "4"^^xs:integer;
+    voaf:propertyNumber "6"^^xs:integer;
     schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-19T16:03:39.000Z"^^xs:dateTime;
     schema:description "The absolute definitive test ontology..."@en;
@@ -86,6 +86,15 @@
     a rdf:Resource;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "address".
+:Age schema:dateCreated "2020-01-25T09:12:20.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:12:20.000Z"^^xs:dateTime;
+    schema:description "The age in years."@en;
+    schema:name "age"@en;
+    a rdf:Property;
+    rdfs:domain :Person;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "Age";
+    rdfs:range xs:int.
 :Airplane schema:dateCreated "2020-01-20T12:53:20.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-21T17:48:36.000Z"^^xs:dateTime;
     schema:description "A device for transporting people or goods via air."@en;
@@ -105,6 +114,15 @@
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Animal";
     rdfs:subClassOf :Thing.
+:BirthDate schema:dateCreated "2020-01-25T09:11:57.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:11:57.000Z"^^xs:dateTime;
+    schema:description "The birth date of a person."@en;
+    schema:name "birth Date"@en;
+    a rdf:Property;
+    rdfs:domain :Person;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "BirthDate";
+    rdfs:range xs:dateTime.
 :Bob schema:description "A person."@en;
     schema:name "Bob"@en;
     a :Thing;
@@ -124,8 +142,10 @@
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Device";
     rdfs:subClassOf :Thing.
-:FirstName schema:description "A name given to a person."@en;
-    schema:name "firstName"@en;
+:FirstName schema:dateCreated "2020-01-25T09:10:25.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:10:25.000Z"^^xs:dateTime;
+    schema:description "A name given to a person."@en;
+    schema:name "first Name"@en;
     a rdf:Property;
     rdfs:domain :Person;
     rdfs:isDefinedBy <ex:test>;
@@ -144,12 +164,36 @@
     rdfs:range xs:string;
     sh:maxCount "1"^^xs:integer;
     sh:minCount "1"^^xs:integer.
+:LastName schema:dateCreated "2020-01-25T09:10:19.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:10:19.000Z"^^xs:dateTime;
+    schema:description "The family name of a person."@en;
+    schema:name "last Name"@en;
+    a rdf:Property;
+    rdfs:domain :Person;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "LastName";
+    rdfs:range xs:string.
 :Organization schema:description "An organization too"@en;
     schema:name "Organization"@en;
     a rdf:Resource, rdfs:Class;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Organization";
     rdfs:subClassOf :Thing.
+:Person schema:dateCreated "2020-01-25T09:09:04.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:09:04.000Z"^^xs:dateTime;
+    schema:description "A person."@en;
+    schema:name "Person"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "Person";
+    rdfs:subClassOf :Thing.
+:SomeRelation schema:dateCreated "2020-01-25T09:11:06.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:11:06.000Z"^^xs:dateTime;
+    schema:description "A property with no defined range."@en;
+    schema:name "some Relation"@en;
+    a rdf:Property;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "SomeRelation".
 :Thing schema:description "A thing."@en;
     schema:name "Thing"@en;
     a rdf:Resource, rdfs:Class;
