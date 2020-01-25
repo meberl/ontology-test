@@ -87,14 +87,16 @@
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "address".
 :Age schema:dateCreated "2020-01-25T09:12:20.000Z"^^xs:dateTime;
-    schema:dateModified "2020-01-25T09:12:20.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:20:37.000Z"^^xs:dateTime;
     schema:description "The age in years."@en;
     schema:name "age"@en;
     a rdf:Property;
     rdfs:domain :Person;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Age";
-    rdfs:range xs:int.
+    rdfs:range xs:int;
+    sh:maxCount "1"^^xs:integer;
+    sh:minCount "1"^^xs:integer.
 :Airplane schema:dateCreated "2020-01-20T12:53:20.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-21T17:48:36.000Z"^^xs:dateTime;
     schema:description "A device for transporting people or goods via air."@en;
@@ -105,7 +107,7 @@
     rdfs:subClassOf :Device.
 :Alice schema:description "A person."@en;
     schema:name "Alice"@en;
-    a :Thing;
+    a :Person;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Alice".
 :Animal schema:description "Not a person."@en;
@@ -115,17 +117,24 @@
     rdfs:label "Animal";
     rdfs:subClassOf :Thing.
 :BirthDate schema:dateCreated "2020-01-25T09:11:57.000Z"^^xs:dateTime;
-    schema:dateModified "2020-01-25T09:11:57.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:18:54.000Z"^^xs:dateTime;
     schema:description "The birth date of a person."@en;
     schema:name "birth Date"@en;
     a rdf:Property;
     rdfs:domain :Person;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "BirthDate";
-    rdfs:range xs:dateTime.
-:Bob schema:description "A person."@en;
+    rdfs:range xs:dateTime;
+    sh:maxCount "1"^^xs:integer;
+    sh:minCount "1"^^xs:integer.
+:Bob :Age "37";
+    :BirthDate "2020-01-25T10:37:27.320Z";
+    :Id "bobby";
+    :Knows :Alice, :Bob;
+    :LastName "1";
+    schema:description "A person."@en;
     schema:name "Bob"@en;
-    a :Thing;
+    a :Thing, :Person;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Bob".
 :Car schema:dateCreated "2020-01-18T20:46:49.000Z"^^xs:dateTime;
@@ -174,14 +183,16 @@
     rdfs:label "Knows";
     rdfs:range :Person.
 :LastName schema:dateCreated "2020-01-25T09:10:19.000Z"^^xs:dateTime;
-    schema:dateModified "2020-01-25T09:10:19.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:20:10.000Z"^^xs:dateTime;
     schema:description "The family name of a person."@en;
     schema:name "last Name"@en;
     a rdf:Property;
     rdfs:domain :Person;
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "LastName";
-    rdfs:range xs:string.
+    rdfs:range xs:string;
+    sh:maxCount "1"^^xs:integer;
+    sh:minCount "1"^^xs:integer.
 :Organization schema:description "An organization too"@en;
     schema:name "Organization"@en;
     a rdf:Resource, rdfs:Class;
