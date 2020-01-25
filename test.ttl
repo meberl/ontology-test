@@ -13,7 +13,7 @@
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
     voaf:classNumber "7"^^xs:integer;
     voaf:instanceNumber "4"^^xs:integer;
-    voaf:propertyNumber "6"^^xs:integer;
+    voaf:propertyNumber "7"^^xs:integer;
     schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-19T16:03:39.000Z"^^xs:dateTime;
     schema:description "The absolute definitive test ontology..."@en;
@@ -164,6 +164,15 @@
     rdfs:range xs:string;
     sh:maxCount "1"^^xs:integer;
     sh:minCount "1"^^xs:integer.
+:Knows schema:dateCreated "2020-01-25T09:13:39.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-25T09:13:39.000Z"^^xs:dateTime;
+    schema:description "A relation between people."@en;
+    schema:name "knows"@en;
+    a rdf:Property;
+    rdfs:domain :Person;
+    rdfs:isDefinedBy <ex:test>;
+    rdfs:label "Knows";
+    rdfs:range :Person.
 :LastName schema:dateCreated "2020-01-25T09:10:19.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-25T09:10:19.000Z"^^xs:dateTime;
     schema:description "The family name of a person."@en;
