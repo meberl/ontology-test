@@ -12,7 +12,7 @@
 
 <ex:test> vann:preferredNamespaceUri <ex:test/>;
     voaf:classNumber "7"^^xs:integer;
-    voaf:instanceNumber "8"^^xs:integer;
+    voaf:instanceNumber "10"^^xs:integer;
     voaf:propertyNumber "7"^^xs:integer;
     schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-25T14:53:26.000Z"^^xs:dateTime;
@@ -106,8 +106,8 @@
     rdfs:isDefinedBy <ex:test>;
     rdfs:label "Airplane";
     rdfs:subClassOf :Device.
-:Alice :Age "2"^^xs:int;
-    :BirthDate "2018-01-27T23:00:00.000Z"^^xs:dateTime;
+:Alice :Age "2"^^xs:integer;
+    :BirthDate "2018-01-27T23:00:00.000Z";
     schema:description "A person."@en;
     schema:name "Alice"@en;
     a :Person;
@@ -202,7 +202,7 @@
     rdfs:label "Organization";
     rdfs:subClassOf :Thing.
 :Person schema:dateCreated "2020-01-25T09:09:04.000Z"^^xs:dateTime;
-    schema:dateModified "2020-01-25T09:09:04.000Z"^^xs:dateTime;
+    schema:dateModified "2020-01-26T17:32:20.000Z"^^xs:dateTime;
     schema:description "A person."@en;
     schema:name "Person"@en;
     a rdfs:Class;
