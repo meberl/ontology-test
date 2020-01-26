@@ -1,0 +1,11 @@
+@prefix : <http://test.org/>.
+
+<http://test.org> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://test.org/>;
+    <http://schema.org/dateCreated> "2020-01-25T18:55:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-01-25T18:55:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/description> "Another test ontology."@en;
+    <http://schema.org/identifier> "85b26477-db09-008d-bb9e-caeefe12881e";
+    <http://schema.org/name> "Test 2"@en;
+    <http://schema.org/version> "1.0";
+    a <http://www.w3.org/2002/07/owl#Ontology>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "test.org".
