@@ -3,25 +3,25 @@
 <http://test.org> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://test.org/>;
     <http://purl.org/vocommons/voaf#classNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://schema.org/dateCreated> "2020-01-25T18:55:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://schema.org/dateModified> "2020-02-02T16:15:49.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://schema.org/description> "Another test ontology."@en;
+    <http://schema.org/dateModified> "2020-02-02T16:17:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/description> "Another test ontology."@en, "Noch eine Test-Ontologie."@de, "Une autre ontologie de test."@fr;
     <http://schema.org/identifier> "85b26477-db09-008d-bb9e-caeefe12881e";
-    <http://schema.org/name> "Test 2"@en;
+    <http://schema.org/name> "Test 2"@en, "Test 2"@de, "Essai 2"@fr;
     <http://schema.org/version> "1.0";
     a <http://www.w3.org/2002/07/owl#Ontology>;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://test.org>;
     <http://www.w3.org/2000/01/rdf-schema#label> "test.org".
 :Person <http://schema.org/dateCreated> "2020-02-02T16:16:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://schema.org/dateModified> "2020-02-02T16:16:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-02-02T16:17:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/description> ""@en;
-    <http://schema.org/name> "Person"@en;
+    <http://schema.org/name> "Person"@en, "Person"@de, "Personne"@fr;
     a <http://www.w3.org/2000/01/rdf-schema#Class>;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://test.org>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Person".
 :Test <http://schema.org/dateCreated> "2020-01-26T14:38:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://schema.org/dateModified> "2020-01-26T14:38:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-02-02T16:17:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/description> ""@en;
-    <http://schema.org/name> "Test"@en;
+    <http://schema.org/name> "Test"@en, "Test"@de, "Test"@fr;
     a <http://www.w3.org/2000/01/rdf-schema#Class>;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://test.org>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Test".
