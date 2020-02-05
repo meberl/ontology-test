@@ -19,14 +19,14 @@
 
 <http://w3id.org/art/terms/1.0> vann:preferredNamespacePrefix "art";
     vann:preferredNamespaceUri <http://w3id.org/art/terms/1.0/>;
-    voaf:classNumber "19"^^xsd:integer;
+    voaf:classNumber "20"^^xsd:integer;
     voaf:instanceNumber "7"^^xsd:integer;
     voaf:propertyNumber "29"^^xsd:integer;
     schema:dateCreated "2020-02-05T12:04:48.000Z"^^xsd:dateTime;
-    schema:dateModified "2020-02-05T12:04:56.000Z"^^xsd:dateTime;
+    schema:dateModified "2020-02-05T15:45:44.000Z"^^xsd:dateTime;
     schema:description "The Artivity ontology was created as the basis for database storage and data exchange of desktop publishing provenance data. The terms of this vocabulary are aligned with the W3C PROV, OSCAF and the QUDT ontologies."@en;
     schema:identifier "http://w3id.org/art/terms/1.0";
-    schema:name "Artivity"@en, "Artivity"@en;
+    schema:name "Artivity"@en;
     schema:publisher <http://artivity.io/about>;
     schema:version "1.0";
     a owl:Ontology;
@@ -438,6 +438,14 @@ art:Point schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
     rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
     rdfs:label "Point";
     rdfs:subClassOf geo:SpatialObject.
+art:PolarCoordinateSystem schema:dateCreated "2020-02-05T15:47:52.000Z"^^xsd:dateTime;
+    schema:dateModified "2020-02-05T15:47:52.000Z"^^xsd:dateTime;
+    schema:description ""@en;
+    schema:name "Polar Coordinate System"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "PolarCoordinateSystem";
+    rdfs:subClassOf art:CoordinateSystem.
 art:position schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
     schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
     schema:description "Location of a geometry in Euclidean space."@en;
