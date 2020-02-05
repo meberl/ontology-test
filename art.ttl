@@ -243,11 +243,11 @@ art:CoordinateSystem schema:alternateName "Koordinatenurspung"@de, "Referenzsyst
     a rdfs:Class;
     rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
     rdfs:label "CoordinateSystem".
-art:CreateFile schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
-    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
-    schema:description "An activity which resulted in a new file being generated."@en;
+art:CreateFile schema:dateCreated "2020-02-05T12:07:38.000Z"^^xsd:dateTime;
+    schema:dateModified "2020-02-05T12:07:38.000Z"^^xsd:dateTime;
+    schema:description "An activity which resulted in a new file being generated."@en, "Eine Aktivität, die dazu führte, dass eine neue Datei generiert wurde."@de;
     schema:identifier "http://w3id.org/art/terms/1.0/CreateFile";
-    schema:name "Create File"@en;
+    schema:name "Create File"@en, "Datei erstellen"@de;
     a rdfs:Class;
     rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
     rdfs:label "CreateFile";
