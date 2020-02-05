@@ -1,0 +1,658 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix schema: <http://schema.org/>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix voaf: <http://purl.org/vocommons/voaf#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix qudt: <http://qudt.org/vocab/unit#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix art: <http://w3id.org/art/terms/1.0/>.
+
+<http://w3id.org/art/terms/1.0> vann:preferredNamespacePrefix "art";
+    vann:preferredNamespaceUri <http://w3id.org/art/terms/1.0/>;
+    voaf:classNumber "19"^^xsd:integer;
+    voaf:instanceNumber "7"^^xsd:integer;
+    voaf:propertyNumber "29"^^xsd:integer;
+    schema:dateCreated "2020-02-05T12:04:48.000Z"^^xsd:dateTime;
+    schema:dateModified "2020-02-05T12:04:56.000Z"^^xsd:dateTime;
+    schema:description "The Artivity ontology was created as the basis for database storage and data exchange of desktop publishing provenance data. The terms of this vocabulary are aligned with the W3C PROV, OSCAF and the QUDT ontologies."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0";
+    schema:name "Artivity"@en, "Artivity"@en;
+    schema:publisher <http://artivity.io/about>;
+    schema:version "1.0";
+    a owl:Ontology;
+    rdfs:isDefinedBy <http://w3id.org/art/terms>;
+    rdfs:label "1.0".
+<http://w3id.org/art/terms/1.0/_ns0> schema:name "rdf"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns0";
+    <http://www.w3.org/ns/rdfa#prefix> "rdf";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+<http://w3id.org/art/terms/1.0/_ns1> schema:name "rdfs"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns1";
+    <http://www.w3.org/ns/rdfa#prefix> "rdfs";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.w3.org/2000/01/rdf-schema#>.
+<http://w3id.org/art/terms/1.0/_ns10> schema:name "nfo"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns10";
+    <http://www.w3.org/ns/rdfa#prefix> "nfo";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#>.
+<http://w3id.org/art/terms/1.0/_ns11> schema:name "geo"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns11";
+    <http://www.w3.org/ns/rdfa#prefix> "geo";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.opengis.net/ont/geosparql#>.
+<http://w3id.org/art/terms/1.0/_ns12> schema:name "qudt"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns12";
+    <http://www.w3.org/ns/rdfa#prefix> "qudt";
+    <http://www.w3.org/ns/rdfa#uri> <http://qudt.org/vocab/unit#>.
+<http://w3id.org/art/terms/1.0/_ns13> schema:name "skos"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns13";
+    <http://www.w3.org/ns/rdfa#prefix> "skos";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.w3.org/2004/02/skos/core#>.
+<http://w3id.org/art/terms/1.0/_ns14> schema:name "sh"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns14";
+    <http://www.w3.org/ns/rdfa#prefix> "sh";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.w3.org/ns/shacl#>.
+<http://w3id.org/art/terms/1.0/_ns15> schema:name "vs"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns15";
+    <http://www.w3.org/ns/rdfa#prefix> "vs";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+<http://w3id.org/art/terms/1.0/_ns16> schema:name "dc"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns16";
+    <http://www.w3.org/ns/rdfa#prefix> "dc";
+    <http://www.w3.org/ns/rdfa#uri> <http://purl.org/dc/elements/1.1/>.
+<http://w3id.org/art/terms/1.0/_ns2> schema:name "xsd"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns2";
+    <http://www.w3.org/ns/rdfa#prefix> "xsd";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.w3.org/2001/XMLSchema#>.
+<http://w3id.org/art/terms/1.0/_ns3> schema:name "owl"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns3";
+    <http://www.w3.org/ns/rdfa#prefix> "owl";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.w3.org/2002/07/owl#>.
+<http://w3id.org/art/terms/1.0/_ns4> schema:name "schema"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns4";
+    <http://www.w3.org/ns/rdfa#prefix> "schema";
+    <http://www.w3.org/ns/rdfa#uri> <http://schema.org/>.
+<http://w3id.org/art/terms/1.0/_ns5> schema:name "vann"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns5";
+    <http://www.w3.org/ns/rdfa#prefix> "vann";
+    <http://www.w3.org/ns/rdfa#uri> <http://purl.org/vocab/vann/>.
+<http://w3id.org/art/terms/1.0/_ns6> schema:name "voaf"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns6";
+    <http://www.w3.org/ns/rdfa#prefix> "voaf";
+    <http://www.w3.org/ns/rdfa#uri> <http://purl.org/vocommons/voaf#>.
+<http://w3id.org/art/terms/1.0/_ns7> schema:name "prov"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns7";
+    <http://www.w3.org/ns/rdfa#prefix> "prov";
+    <http://www.w3.org/ns/rdfa#uri> <http://www.w3.org/ns/prov#>.
+<http://w3id.org/art/terms/1.0/_ns8> schema:name "dcterms"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns8";
+    <http://www.w3.org/ns/rdfa#prefix> "dcterms";
+    <http://www.w3.org/ns/rdfa#uri> <http://purl.org/dc/terms/>.
+<http://w3id.org/art/terms/1.0/_ns9> schema:name "foaf"@en;
+    a <http://www.w3.org/ns/rdfa#PrefixMapping>;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "_ns9";
+    <http://www.w3.org/ns/rdfa#prefix> "foaf";
+    <http://www.w3.org/ns/rdfa#uri> <http://xmlns.com/foaf/0.1/>.
+art:aboveLayer schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Indicates that the contents of a layer are placed on top of the referenced layer."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/aboveLayer";
+    schema:name "above Layer"@en;
+    a rdf:Property;
+    rdfs:domain art:Layer;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "aboveLayer";
+    rdfs:range art:Layer.
+art:boundaries schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "References a geometry that provides the minimum bounds for a geometry or group of geometries."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/boundaries";
+    schema:name "boundaries"@en;
+    a rdf:Property;
+    rdfs:domain prov:Entity, prov:EntityInfluence;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "boundaries";
+    rdfs:range art:BoundingRectangle.
+art:BoundingRectangle schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An expression of the maximum extents of a 2-dimensional object (e.g. point, line, polygon) or set of objects within their 2-D coordinate system. In other words min(x), max(x), min(y), max(y)."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/BoundingRectangle";
+    schema:name "Bounding  Rectangle"@en, "Bounding Rectangle"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "BoundingRectangle";
+    rdfs:subClassOf art:Rectangle.
+art:canvas schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "References a rectangle that defines the printable or renderable region of a document."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/canvas";
+    schema:name "canvas"@en;
+    a rdf:Property;
+    rdfs:domain nfo:RasterImage, nfo:VectorImage;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "canvas";
+    rdfs:range art:Canvas.
+art:Canvas schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An entity that defines the 2-dimensional extents of the printable or renderable region(s) of a document."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/Canvas";
+    schema:name "Canvas"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "Canvas";
+    rdfs:subClassOf art:Rectangle.
+art:CartesianCoordinateSystem schema:alternateName "Rechtwinkeliges Koordinatensystem"@de, "Rechtwinkelige Koordinaten"@de;
+    schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "A coordinate system that specifies each point uniquely using n Cartesian coordinates which specify the point in an n-dimensional Euclidean space for any dimension n. These coordinates are equal, up to sign, to distances from the point to n mutually perpendicular hyperplanes."@en, "Ein kartesisches Koordinatensystem ist ein orthogonales Koordinatensystem."@de;
+    schema:identifier "http://w3id.org/art/terms/1.0/CartesianCoordinateSystem";
+    schema:image <https://upload.wikimedia.org/wikipedia/commons/6/69/Coord_system_CA_0.svg>;
+    schema:name "Cartesian  Coordinate  System"@en, "Kartesisches  Koordinatensystem"@de, "Cartesian Coordinate System"@en;
+    schema:thumbnail <https://upload.wikimedia.org/wikipedia/commons/6/69/Coord_system_CA_0.svg>;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "CartesianCoordinateSystem";
+    rdfs:subClassOf art:CoordinateSystem.
+art:cm schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "A unit of length in the metric system, equal to one hundredth of a metre."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/cm";
+    schema:name "cm"@en;
+    a art:LengthUnit;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "cm".
+art:colorCode schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An associated color encoded in a RGB or ARGB hex string."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/colorCode";
+    schema:name "color Code"@en;
+    a rdf:Property;
+    rdfs:domain prov:Entity;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "colorCode";
+    rdfs:range xsd:string.
+art:coordinateDimension schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The number of coordinates that are required to uniquely identify a position in a coordinate system."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/coordinateDimension";
+    schema:name "coordinate Dimension"@en;
+    a rdf:Property;
+    rdfs:domain art:CoordinateSystem;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "coordinateDimension";
+    rdfs:range xsd:integer.
+art:coordinateSystem schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The coordinate system that is used to locate geometries in a document."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/coordinateSystem";
+    schema:name "coordinate System"@en;
+    a rdf:Property;
+    rdfs:domain nfo:RasterImage, nfo:VectorImage;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "coordinateSystem";
+    rdfs:range art:CoordinateSystem.
+art:CoordinateSystem schema:alternateName "Koordinatenurspung"@de, "Referenzsystem"@de, "Bezugssystem"@de;
+    schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Ein Koordinatensystem dient zur eindeutigen Bezeichnung der Position von Punkten und Objekten in einem geometrischen Raum."@de, "A system which uses one or more numbers (coordinates) to uniquely determine the position of a point or other geometric element on a manifold such as Euclidean space."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/CoordinateSystem";
+    schema:image <https://upload.wikimedia.org/wikipedia/commons/0/0e/Coord_system_CY_1.svg>;
+    schema:name "Koordinatensystem"@de, "Coordinate System"@en;
+    schema:thumbnail <https://upload.wikimedia.org/wikipedia/commons/0/0e/Coord_system_CY_1.svg>;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "CoordinateSystem".
+art:CreateFile schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An activity which resulted in a new file being generated."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/CreateFile";
+    schema:name "Create File"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "CreateFile";
+    rdfs:subClassOf prov:Activity.
+art:DeleteFile schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An activity which resulted in an existing file being deleted."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/DeleteFile";
+    schema:name "Delete File"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "DeleteFile";
+    rdfs:subClassOf prov:Activity.
+art:depth schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The extents of a geometry along the z-axis of a Cartesian coordinate system."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/depth";
+    schema:name "depth"@en;
+    a rdf:Property;
+    rdfs:domain geo:Geometry;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "depth";
+    rdfs:range xsd:double.
+art:EditFile schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An activity which may result in an existing file being revised and/or modified."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/EditFile";
+    schema:name "Edit File"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "EditFile";
+    rdfs:subClassOf prov:Activity.
+art:EntityGroup schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "A set of entities."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/EntityGroup";
+    schema:name "Entity Group"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "EntityGroup";
+    rdfs:subClassOf prov:Entity.
+art:executable schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The executable program file data object of a software agent."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/executable";
+    schema:name "executable"@en;
+    a rdf:Property;
+    rdfs:domain prov:SoftwareAgent;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "executable";
+    rdfs:range nfo:FileDataObject.
+art:ft schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "A unit of length in the imperial and US customary systems of measurement. Since 1959, the international foot was defined as 0.3048 Wikipedia: meters exactly."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/ft";
+    schema:name "ft"@en;
+    a art:LengthUnit;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "ft".
+art:group schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Establishes a part-of relationship between an entity a group of entities."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/group";
+    schema:name "group"@en;
+    a rdf:Property;
+    rdfs:domain prov:Entity;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "group";
+    rdfs:range art:EntityGroup.
+art:height schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The extents of a geometry along the y-axis of a Cartesian coordinate system."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/height";
+    schema:name "height"@en;
+    a rdf:Property;
+    rdfs:domain geo:Geometry;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "height";
+    rdfs:range xsd:double.
+art:in schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "A unit of length in the imperial and US customary systems of measurement. Since 1959, the international yard was defined as 0.9144 metres exactly."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/in";
+    schema:name "in"@en;
+    a art:LengthUnit;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "in".
+art:layer schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Establishes a relationship between an object an a layer."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/layer";
+    schema:name "layer"@en;
+    a rdf:Property;
+    rdfs:domain prov:Entity;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "layer";
+    rdfs:range art:Layer.
+art:Layer schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description ""@de, "Establishes a depth hierarchy amongst separate elements of a 2-dimensional digital image."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/Layer";
+    schema:image <https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/LayersTransparent.jpg/200px-LayersTransparent.jpg>;
+    schema:name "Ebene"@de, "Layer"@en;
+    schema:thumbnail <https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/LayersTransparent.jpg/200px-LayersTransparent.jpg>;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "Layer";
+    rdfs:subClassOf prov:Entity.
+art:lengthUnit schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Specifies the length unit used for the coordinates in a coordinate system."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/lengthUnit";
+    schema:name "length Unit"@en;
+    a rdf:Property;
+    rdfs:domain art:CoordinateSystem;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "lengthUnit";
+    rdfs:range art:LengthUnit.
+art:LengthUnit schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Unter einem L‰ngenmaﬂ oder genauer einer L‰ngenmaﬂeinheit versteht man eine Maﬂeinheit f¸r die L‰nge."@de, "Refers to any discrete, pre-established length or distance having a constant magnitude which is used as a reference or convention to express linear dimension."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/LengthUnit";
+    schema:name "L‰ngeneinheit"@de, "Length Unit"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "LengthUnit".
+art:loggingEnabled schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Indicates if the logging of activities is enabled for a software agent."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/loggingEnabled";
+    schema:name "logging Enabled"@en;
+    a rdf:Property;
+    rdfs:domain prov:SoftwareAgent;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "loggingEnabled";
+    rdfs:range xsd:boolean.
+art:m schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The base unit of length in the International System of Units (SI), the modern form of the metric system."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/m";
+    schema:name "m"@en;
+    a art:LengthUnit;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "m".
+art:mm schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "A unit of length in the metric system, equal to one thousandth of a metre."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/mm";
+    schema:name "mm"@en;
+    a art:LengthUnit;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "mm".
+art:parentLayer schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Indicates that a layer is logically contained in the referenced layer."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/parentLayer";
+    schema:name "parent Layer"@en;
+    a rdf:Property;
+    rdfs:domain art:Layer;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "parentLayer";
+    rdfs:range art:Layer.
+art:PartialRenderingDataObject schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Rasterized bitmap data of a specific region of an image."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/PartialRenderingDataObject";
+    schema:name "Partielles  Rendering- Datenobjekt"@de, "Partial Rendering Data Object"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "PartialRenderingDataObject";
+    rdfs:subClassOf art:RenderingDataObject.
+art:pluginFolder schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The file system folder containing the program extension (plugin) of the Artivity software agent."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/pluginFolder";
+    schema:name "plugin Folder"@en;
+    a rdf:Property;
+    rdfs:domain prov:SoftwareAgent;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "pluginFolder";
+    rdfs:range nfo:Folder.
+art:Point schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An entity that captures the notion of a unique location in Euclidean space."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/Point";
+    schema:name "Punkt"@de, "Point"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "Point";
+    rdfs:subClassOf geo:SpatialObject.
+art:position schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Location of a geometry in Euclidean space."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/position";
+    schema:name "position"@en;
+    a rdf:Property;
+    rdfs:domain geo:Geometry;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "position";
+    rdfs:range art:Point.
+art:pt schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The smallest unit of measure in typography. The desktop publishing point is defined as 1‚Å72 of an international inch (about 0.353 mm)."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/pt";
+    schema:name "pt"@en;
+    a art:LengthUnit;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "pt".
+art:px schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "A physical point in a raster image, or the smallest addressable element in an all points addressable display device."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/px";
+    schema:name "px"@en;
+    a art:LengthUnit;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "px".
+art:Rectangle schema:alternateName "Orthogon"@de;
+    schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "In der Geometrie ist ein Rechteck ein ebenes Viereck, dessen Innenwinkel alle rechte Winkel sind."@de, "In Euclidean plane geometry, a rectangle is a quadrilateral with four right angles."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/Rectangle";
+    schema:name "Rechteck"@de, "Rectangle"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "Rectangle";
+    rdfs:subClassOf prov:Entity, geo:Geometry.
+art:Redo schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The re-generation of a formerly undone entity influence."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/Redo";
+    schema:name "Wiederherstellen"@de, "Redo"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "Redo";
+    rdfs:subClassOf prov:EntityInfluence.
+art:region schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Specifies the shape and location of something in Euclidean space."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/region";
+    schema:name "region"@en;
+    a rdf:Property;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "region";
+    rdfs:range geo:Geometry.
+art:renderedAs schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "A rasterized portion of an image that provides bitmap data for an entity influence."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/renderedAs";
+    schema:name "rendered As"@en;
+    a rdf:Property;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "renderedAs";
+    rdfs:range geo:Geometry.
+art:RenderingDataObject schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Rasterized bitmap data of the entire extents of an image."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/RenderingDataObject";
+    schema:name "Rendering- Datenobjekt"@de, "Rendering Data Object"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "RenderingDataObject";
+    rdfs:subClassOf nfo:FileDataObject.
+art:restored schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Indicates that a entity influence re-generated another."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/restored";
+    schema:name "restored"@en;
+    a rdf:Property;
+    rdfs:domain prov:EntityInfluence;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "restored";
+    rdfs:range prov:EntityInfluence.
+art:reverted schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Indicates that a entity influence invalidated another."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/reverted";
+    schema:name "reverted"@en;
+    a rdf:Property;
+    rdfs:domain prov:EntityInfluence;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "reverted";
+    rdfs:range prov:EntityInfluence.
+art:selectedGroup schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Marks a group of entities as selected within a given context."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/selectedGroup";
+    schema:name "selected Group"@en;
+    a rdf:Property;
+    rdfs:domain prov:EntityInfluence;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "selectedGroup";
+    rdfs:range art:EntityGroup.
+art:selectedLayer schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Marks a layer as selected within a given context."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/selectedLayer";
+    schema:name "selected Layer"@en;
+    a rdf:Property;
+    rdfs:domain prov:EntityInfluence;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "selectedLayer";
+    rdfs:range art:Layer.
+art:transformationMatrix schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "Defines the basis of a vector space or a linear transformation in form of a set of vectors which are represented by a matrix."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/transformationMatrix";
+    schema:name "transformation Matrix"@en;
+    a rdf:Property;
+    rdfs:domain art:CoordinateSystem, geo:Geometry;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "transformationMatrix";
+    rdfs:range xsd:string.
+art:Undo schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The invalidation of an existing entity influence."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/Undo";
+    schema:name "R¸ckg‰ngig"@de, "Undo"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "Undo";
+    rdfs:subClassOf prov:EntityInfluence.
+art:ViewFile schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An activity in which a file was viewed by one or more users."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/ViewFile";
+    schema:name "View  File"@en, "View File"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "ViewFile";
+    rdfs:subClassOf prov:Activity.
+art:viewport schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "References a rectangle that represents the visible area of a document."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/viewport";
+    schema:name "viewport"@en;
+    a rdf:Property;
+    rdfs:domain prov:EntityInfluence;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "viewport";
+    rdfs:range art:Viewport.
+art:Viewport schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "A rectangle that represents the visible portion of a document."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/Viewport";
+    schema:name "Viewport"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "Viewport";
+    rdfs:subClassOf art:Rectangle.
+art:WebBrowsing schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An activity in which one or more websites were viewed by one or more users."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/WebBrowsing";
+    schema:name "Web Browsing"@en;
+    a rdfs:Class;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "WebBrowsing";
+    rdfs:subClassOf prov:Activity.
+art:width schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The extents of a geometry along the x-axis of a Cartesian coordinate system."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/width";
+    schema:name "width"@en;
+    a rdf:Property;
+    rdfs:domain geo:Geometry;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "width";
+    rdfs:range xsd:double.
+art:x schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The x-coordinate value describing the position of a point in a Cartesian coordinate system."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/x";
+    schema:name "x"@en;
+    a rdf:Property;
+    rdfs:domain art:Point;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "x";
+    rdfs:range xsd:double.
+art:y schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The y-coordinate value describing the position of a point in a Cartesian coordinate system."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/y";
+    schema:name "y"@en;
+    a rdf:Property;
+    rdfs:domain art:Point;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "y";
+    rdfs:range xsd:double.
+art:z schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "The z-coordinate value describing the position of a point in a Cartesian coordinate system."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/z";
+    schema:name "z"@en;
+    a rdf:Property;
+    rdfs:domain art:Point;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "z";
+    rdfs:range xsd:double.
+art:zoomFactor schema:dateModified "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:datePublished "2016-06-05T22:00:00.000Z"^^xsd:dateTime;
+    schema:description "An application specific value describing the magnification of the currently viewed geometries."@en;
+    schema:identifier "http://w3id.org/art/terms/1.0/zoomFactor";
+    schema:name "zoom Factor"@en;
+    a rdf:Property;
+    rdfs:domain art:Viewport;
+    rdfs:isDefinedBy <http://w3id.org/art/terms/1.0>;
+    rdfs:label "zoomFactor";
+    rdfs:range xsd:double.
