@@ -8,84 +8,84 @@
 @prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 @prefix voaf: <http://purl.org/vocommons/voaf#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
-@prefix : <ex:test/>.
+@prefix : <http://test.org/>.
 
-<ex:test> vann:preferredNamespaceUri <ex:test/>;
+<http://test.org> vann:preferredNamespaceUri <http://test.org/>;
     voaf:classNumber "7"^^xs:integer;
     voaf:instanceNumber "2"^^xs:integer;
     voaf:propertyNumber "7"^^xs:integer;
     schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
-    schema:dateModified "2020-01-26T17:51:04.000Z"^^xs:dateTime;
+    schema:dateModified "2020-02-13T19:52:35.000Z"^^xs:dateTime;
     schema:description "The absolute definitive test ontology.."@en;
-    schema:identifier "urn:uuid:249a2594-692d-e9d0-ee83-35475e8afde2";
+    schema:identifier "f35f59c1-5fdb-3986-8fa0-b8762dbe01aa";
     schema:name "Test"@en;
     a rdf:Resource, owl:Ontology;
-    rdfs:isDefinedBy <>;
-    rdfs:label "ex:test";
+    rdfs:isDefinedBy <http://test.org>;
+    rdfs:label "test.org";
     owl:imports <http://schema.org/>.
-<ex:test/_ns0> schema:name "rdf"@en;
+<http://test.org/_ns0> schema:name "rdf"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns0";
     rdfa:prefix "rdf";
     rdfa:uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-<ex:test/_ns1> schema:name "rdfa"@en;
+<http://test.org/_ns1> schema:name "rdfa"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns1";
     rdfa:prefix "rdfa";
     rdfa:uri <http://www.w3.org/ns/rdfa#>.
-<ex:test/_ns2> schema:name "rdfs"@en;
+<http://test.org/_ns2> schema:name "rdfs"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns2";
     rdfa:prefix "rdfs";
     rdfa:uri <http://www.w3.org/2000/01/rdf-schema#>.
-<ex:test/_ns3> schema:name "owl"@en;
+<http://test.org/_ns3> schema:name "owl"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns3";
     rdfa:prefix "owl";
     rdfa:uri <http://www.w3.org/2002/07/owl#>.
-<ex:test/_ns4> schema:name "schema"@en;
+<http://test.org/_ns4> schema:name "schema"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns4";
     rdfa:prefix "schema";
     rdfa:uri <http://schema.org/>.
-<ex:test/_ns5> schema:name "sh"@en;
+<http://test.org/_ns5> schema:name "sh"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns5";
     rdfa:prefix "sh";
     rdfa:uri <http://www.w3.org/ns/shacl#>.
-<ex:test/_ns6> schema:name "skos"@en;
+<http://test.org/_ns6> schema:name "skos"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns6";
     rdfa:prefix "skos";
     rdfa:uri <http://www.w3.org/2004/02/skos/core#>.
-<ex:test/_ns7> schema:name "xs"@en;
+<http://test.org/_ns7> schema:name "xs"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns7";
     rdfa:prefix "xs";
     rdfa:uri <http://www.w3.org/2001/XMLSchema#>.
-<ex:test/_ns8> schema:name "voaf"@en;
+<http://test.org/_ns8> schema:name "voaf"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns8";
     rdfa:prefix "voaf";
     rdfa:uri <http://purl.org/vocommons/voaf#>.
-<ex:test/_ns9> schema:name "vann"@en;
+<http://test.org/_ns9> schema:name "vann"@en;
     a rdfa:PrefixMapping;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "_ns9";
     rdfa:prefix "vann";
     rdfa:uri <http://purl.org/vocab/vann/>.
 :address schema:name "Adresse"@de, "Address"@en;
     a rdf:Resource;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "address".
 :Age schema:dateCreated "2020-01-25T09:12:20.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-25T09:20:37.000Z"^^xs:dateTime;
@@ -93,7 +93,7 @@
     schema:name "age"@en;
     a rdf:Property;
     rdfs:domain :Person;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Age";
     rdfs:range xs:int;
     sh:maxCount "1"^^xs:integer;
@@ -103,20 +103,20 @@
     schema:description "A device for transporting people or goods via air."@en;
     schema:name "Airplane"@en;
     a rdfs:Class;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Airplane";
     rdfs:subClassOf :Device.
-:Alice :Age "2"^^xs:integer;
-    :BirthDate "2018-01-27T23:00:00.000Z";
+:Alice <ex:test/Age> "2"^^xs:integer;
+    <ex:test/BirthDate> "2018-01-27T23:00:00.000Z";
     schema:description "A person."@en;
     schema:name "Alice"@en;
     a :Person;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Alice".
 :Animal schema:description "Not a person."@en;
     schema:name "Animal"@en;
     a rdfs:Class;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Animal";
     rdfs:subClassOf :Thing.
 :BirthDate schema:dateCreated "2020-01-25T09:11:57.000Z"^^xs:dateTime;
@@ -125,32 +125,32 @@
     schema:name "birth Date"@en;
     a rdf:Property;
     rdfs:domain :Person;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "BirthDate";
     rdfs:range xs:dateTime;
     sh:maxCount "1"^^xs:integer;
     sh:minCount "1"^^xs:integer.
-:Bob :Age "37"^^xs:integer;
-    :Id "bob";
-    :Knows :Alice, :Bob;
-    :LastName "1";
+:Bob <ex:test/Age> "37"^^xs:integer;
+    <ex:test/Id> "bob";
+    <ex:test/Knows> :Alice, :Bob;
+    <ex:test/LastName> "1";
     schema:description "A person."@en;
     schema:name "Bob"@en;
     a :Person, :Thing;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Bob".
 :Car schema:dateCreated "2020-01-18T20:46:49.000Z"^^xs:dateTime;
     schema:dateModified "2020-01-18T20:46:49.000Z"^^xs:dateTime;
     schema:description "An automobile."@en;
     schema:name "Car"@en;
     a rdfs:Class;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Car";
     rdfs:subClassOf :Device.
 :Device schema:description "The device."@en;
     schema:name "Device"@en;
     a rdfs:Class;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Device";
     rdfs:subClassOf :Thing.
 :FirstName schema:dateCreated "2020-01-25T09:10:25.000Z"^^xs:dateTime;
@@ -159,7 +159,7 @@
     schema:name "first Name"@en;
     a rdf:Property;
     rdfs:domain :Person;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "FirstName";
     rdfs:range xs:string;
     sh:maxCount "1"^^xs:integer;
@@ -170,7 +170,7 @@
     schema:name "id"@en;
     a rdf:Property;
     rdfs:domain :Thing;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Id";
     rdfs:range xs:string;
     sh:maxCount "1"^^xs:integer;
@@ -181,7 +181,7 @@
     schema:name "knows"@en;
     a rdf:Property;
     rdfs:domain :Person;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Knows";
     rdfs:range :Person.
 :LastName schema:dateCreated "2020-01-25T09:10:19.000Z"^^xs:dateTime;
@@ -190,7 +190,7 @@
     schema:name "last Name"@en;
     a rdf:Property;
     rdfs:domain :Person;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "LastName";
     rdfs:range xs:string;
     sh:maxCount "1"^^xs:integer;
@@ -198,7 +198,7 @@
 :Organization schema:description "An organization too"@en;
     schema:name "Organization"@en;
     a rdf:Resource, rdfs:Class;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Organization";
     rdfs:subClassOf :Thing.
 :Person schema:dateCreated "2020-01-25T09:09:04.000Z"^^xs:dateTime;
@@ -206,7 +206,7 @@
     schema:description "A person."@en;
     schema:name "Person"@en;
     a rdfs:Class;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Person";
     rdfs:subClassOf :Thing.
 :SomeRelation schema:dateCreated "2020-01-25T09:11:06.000Z"^^xs:dateTime;
@@ -214,10 +214,10 @@
     schema:description "A property with no defined range."@en;
     schema:name "some Relation"@en;
     a rdf:Property;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "SomeRelation".
 :Thing schema:description "A thing."@en;
     schema:name "Thing"@en;
     a rdf:Resource, rdfs:Class;
-    rdfs:isDefinedBy <ex:test>;
+    rdfs:isDefinedBy <http://test.org>;
     rdfs:label "Thing".
