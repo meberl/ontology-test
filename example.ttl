@@ -1,7 +1,7 @@
 @prefix : <http://example.org/>.
 
 <http://example.org> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://example.org/>;
-    <http://purl.org/vocommons/voaf#classNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer>;
+    <http://purl.org/vocommons/voaf#classNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://purl.org/vocommons/voaf#instanceNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://purl.org/vocommons/voaf#propertyNumber> "4"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://schema.org/dateCreated> "2020-02-21T18:00:03.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -37,6 +37,15 @@
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
     <http://www.w3.org/2000/01/rdf-schema#label> "isNew";
     <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+:Person <http://schema.org/dateCreated> "2020-02-21T18:06:16.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-02-21T18:06:16.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/description> "A person (alive, dead, undead, or fictional)."@en;
+    <http://schema.org/name> "Person"@en;
+    a <http://www.w3.org/2000/01/rdf-schema#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Person";
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> :Thing;
+    <http://www.w3.org/ns/prov#> "http://schema.org/Person".
 :tag <http://schema.org/dateCreated> "2020-02-21T17:49:29.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-21T18:00:03.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/description> "Links a thing to a keyword."@en, "Lie une chose à un mot clé."@fr;
