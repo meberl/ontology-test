@@ -1,7 +1,7 @@
 @prefix : <http://example.org/>.
 
 <http://example.org> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://example.org/>;
-    <http://purl.org/vocommons/voaf#classNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer>;
+    <http://purl.org/vocommons/voaf#classNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://purl.org/vocommons/voaf#instanceNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://purl.org/vocommons/voaf#propertyNumber> "4"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://schema.org/dateCreated> "2020-02-21T18:00:03.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -38,6 +38,14 @@
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
     <http://www.w3.org/2000/01/rdf-schema#label> "isNew";
     <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+:Person <http://schema.org/dateCreated> "2020-02-23T19:02:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-02-23T19:02:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/description> "A person (alive, dead, undead, or fictional)."@en;
+    <http://schema.org/name> "Person"@en;
+    a <http://www.w3.org/2000/01/rdf-schema#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Person";
+    <http://www.w3.org/ns/prov#> "http://schema.org/Person".
 :StatueOfLiberty <http://schema.org/description> "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States."@en, "La Statue de la Liberté est une sculpture néoclassique colossale située sur l'île de Liberty dans le port de New York dans la ville de New York, aux États-Unis."@fr;
     <http://schema.org/image> <http://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Liberty_-_4621961395.jpg>;
     <http://schema.org/name> "Statue of Liberty"@en, "Statue de la Liberté"@fr;
