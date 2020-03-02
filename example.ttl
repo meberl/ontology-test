@@ -1,20 +1,22 @@
 @prefix : <http://example.org/>.
 
 <http://example.org> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://example.org/>;
-    <http://purl.org/vocommons/voaf#classNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
+    <http://purl.org/vocommons/voaf#classNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://purl.org/vocommons/voaf#instanceNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer>;
-    <http://purl.org/vocommons/voaf#propertyNumber> "4"^^<http://www.w3.org/2001/XMLSchema#integer>;
+    <http://purl.org/vocommons/voaf#propertyNumber> "6"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://schema.org/dateCreated> "2020-02-21T18:00:03.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://schema.org/dateModified> "2020-02-21T18:00:03.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-03-02T12:17:39.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/description> ""@en;
     <http://schema.org/identifier> "40b1a106-19c1-097f-c3a8-9d5d8169def2";
     <http://schema.org/name> "Example.org"@en, "Example.org"@fr;
     a <http://www.w3.org/2002/07/owl#Ontology>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "example.org".
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "example.org";
+    <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/seas/BuildingOntology>.
 :BigBen <http://schema.org/description> "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London, and often extended to refer to the clock and the clock tower."@en, "Big Ben est le surnom de la Grande Cloche de l'horloge à l'extrémité nord du Palais de Westminster à Londres, et souvent étendu pour faire référence à l'horloge et à la tour de l'horloge."@fr;
     <http://schema.org/image> <http://commons.wikimedia.org/wiki/Special:FilePath/Clock_Tower_-_Palace_of_Westminster,_London_-_May_2007.jpg>;
     <http://schema.org/name> "Big Ben"@en, "Big Ben"@fr;
-    <http://schema.org/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Clock_Tower_-_Palace_of_Westminster,_London_-_May_2007.jpg?width=300>;
+    <http://schema.org/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Clock_Tower_-_Palace_of_Westminster,_London_-_May_2007.jpg>;
     a :Thing;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
     <http://www.w3.org/2000/01/rdf-schema#label> "BigBen".
@@ -28,6 +30,30 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "dateCreated";
     <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date>;
     <http://www.w3.org/ns/prov#> "http://schema.org/dateCreated".
+:dateCreatedOnline <http://schema.org/dateCreated> "2020-03-02T12:21:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-03-02T12:21:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/description> ""@en;
+    <http://schema.org/name> "date Created Online"@en;
+    a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "dateCreatedOnline";
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> :dateCreated.
+:dateCreatedOnlineInCloud <http://schema.org/dateCreated> "2020-03-02T12:22:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-03-02T12:22:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/description> ""@en;
+    <http://schema.org/name> "date Created Online in Cloud"@en;
+    a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> :IPRS;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "dateCreatedOnlineInCloud";
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> :dateCreatedOnline.
+:IPRS <http://schema.org/dateCreated> "2020-03-02T12:10:36.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-03-02T12:11:32.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/description> "Information Product and Research Service"@en;
+    <http://schema.org/name> "IPRS"@en;
+    a <http://www.w3.org/2000/01/rdf-schema#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "IPRS".
 :isNew <http://schema.org/dateCreated> "2020-02-21T17:51:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-21T18:00:03.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/description> "Indicates was recently created."@en, "Indique a été créé récemment."@fr;
