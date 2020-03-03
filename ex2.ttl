@@ -12,7 +12,7 @@
     a <http://www.w3.org/2002/07/owl#Ontology>;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
     <http://www.w3.org/2000/01/rdf-schema#label> "example.org".
-:BigBen <http://schema.org/description> "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London, and often extended to refer to the clock and the clock tower."@en, "Big Ben est le surnom de la Grande Cloche de l'horloge à l'extrémité nord du Palais de Westminster à Londres, et souvent étendu pour faire référence à l'horloge et à la tour de l'horloge."@fr;
+:BigBen <http://schema.org/description> "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London, and often extended to refer to the clock and the clock tower."@en, "Big Ben est le surnom de la Grande Cloche de l'horloge Ã  l'extrÃ©mitÃ© nord du Palais de Westminster Ã  Londres, et souvent Ã©tendu pour faire rÃ©fÃ©rence Ã  l'horloge et Ã  la tour de l'horloge."@fr;
     <http://schema.org/image> <http://commons.wikimedia.org/wiki/Special:FilePath/Clock_Tower_-_Palace_of_Westminster,_London_-_May_2007.jpg>;
     <http://schema.org/name> "Big Ben"@en, "Big Ben"@fr;
     <http://schema.org/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Clock_Tower_-_Palace_of_Westminster,_London_-_May_2007.jpg>;
@@ -21,8 +21,8 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "BigBen".
 :dateCreated <http://schema.org/dateCreated> "2020-02-21T17:49:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-23T18:49:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://schema.org/description> "The date on which the CreativeWork was created or the item was added to a DataFeed."@en, "Date à laquelle le CreativeWork a été créé ou l'élément a été ajouté à un DataFeed."@fr;
-    <http://schema.org/name> "date Created"@en, "date de création"@fr;
+    <http://schema.org/description> "The date on which the CreativeWork was created or the item was added to a DataFeed."@en, "Date Ã  laquelle le CreativeWork a Ã©tÃ© crÃ©Ã© ou l'Ã©lÃ©ment a Ã©tÃ© ajoutÃ© Ã  un DataFeed."@fr;
+    <http://schema.org/name> "date Created"@en, "date de crÃ©ation"@fr;
     a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
     <http://www.w3.org/2000/01/rdf-schema#domain> :Thing;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
@@ -31,7 +31,7 @@
     <http://www.w3.org/ns/prov#> "http://schema.org/dateCreated".
 :isNew <http://schema.org/dateCreated> "2020-02-21T17:51:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-23T18:49:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://schema.org/description> "Indicates was recently created."@en, "Indique a été créé récemment."@fr;
+    <http://schema.org/description> "Indicates was recently created."@en, "Indique a Ã©tÃ© crÃ©Ã© rÃ©cemment."@fr;
     <http://schema.org/name> "is new"@en, "est nouveau"@fr;
     a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
     <http://www.w3.org/2000/01/rdf-schema#domain> :Thing;
@@ -47,16 +47,16 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Person";
     <http://www.w3.org/2000/01/rdf-schema#subClassOf> :Thing;
     <http://www.w3.org/ns/prov#> "http://schema.org/Person".
-:StatueOfLiberty <http://schema.org/description> "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States."@en, "La Statue de la Liberté est une sculpture néoclassique colossale située sur l'île de Liberty dans le port de New York dans la ville de New York, aux États-Unis."@fr;
+:StatueOfLiberty <http://schema.org/description> "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States."@en, "La Statue de la LibertÃ© est une sculpture nÃ©oclassique colossale situÃ©e sur l'Ã®le de Liberty dans le port de New York dans la ville de New York, aux Ã‰tats-Unis."@fr;
     <http://schema.org/image> <http://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Liberty_-_4621961395.jpg>;
-    <http://schema.org/name> "Statue of Liberty"@en, "Statue de la Liberté"@fr;
+    <http://schema.org/name> "Statue of Liberty"@en, "Statue de la LibertÃ©"@fr;
     <http://schema.org/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Liberty_-_4621961395.jpg>;
     a :Thing;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
     <http://www.w3.org/2000/01/rdf-schema#label> "StatueOfLiberty".
 :tag <http://schema.org/dateCreated> "2020-02-21T17:49:29.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-23T18:49:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://schema.org/description> "Links a thing to a keyword."@en, "Lie une chose à un mot clé."@fr;
+    <http://schema.org/description> "Links a thing to a keyword."@en, "Lie une chose Ã  un mot clÃ©."@fr;
     <http://schema.org/name> "tag"@en, "balise"@fr;
     a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
@@ -65,7 +65,7 @@
     <http://www.w3.org/ns/prov#> "http://dbpedia.org/ontology/tag".
 :Thing <http://schema.org/dateCreated> "2020-02-21T17:40:29.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-23T18:49:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://schema.org/description> "The most generic type of item."@en, "Le type d'article le plus générique."@fr;
+    <http://schema.org/description> "The most generic type of item."@en, "Le type d'article le plus gÃ©nÃ©rique."@fr;
     <http://schema.org/name> "Thing"@en, "Thing"@fr;
     a <http://www.w3.org/2000/01/rdf-schema#Class>;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
