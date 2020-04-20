@@ -3,7 +3,7 @@
 <http://example.org> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://example.org/>;
     <http://purl.org/vocommons/voaf#classNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://purl.org/vocommons/voaf#instanceNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
-    <http://purl.org/vocommons/voaf#propertyNumber> "4"^^<http://www.w3.org/2001/XMLSchema#integer>;
+    <http://purl.org/vocommons/voaf#propertyNumber> "5"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://schema.org/dateCreated> "2020-02-21T18:00:03.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-25T13:55:29.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/description> "The ultimate example ontology by modom.io"@en;
@@ -19,6 +19,15 @@
     a :Thing;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
     <http://www.w3.org/2000/01/rdf-schema#label> "BigBen".
+:birthDate <http://schema.org/dateCreated> "2020-04-20T16:38:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-04-20T16:38:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/description> ""@en;
+    <http://schema.org/name> "birth date"@en;
+    a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> :Person;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "birthDate";
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime>.
 :dateCreated <http://schema.org/dateCreated> "2020-02-21T17:49:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-23T18:49:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/description> "The date on which the CreativeWork was created or the item was added to a DataFeed."@en, "Date à laquelle le CreativeWork a été créé ou l'élément a été ajouté à un DataFeed."@fr;
