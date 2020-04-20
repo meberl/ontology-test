@@ -3,7 +3,7 @@
 <http://example.org> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://example.org/>;
     <http://purl.org/vocommons/voaf#classNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://purl.org/vocommons/voaf#instanceNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer>;
-    <http://purl.org/vocommons/voaf#propertyNumber> "5"^^<http://www.w3.org/2001/XMLSchema#integer>;
+    <http://purl.org/vocommons/voaf#propertyNumber> "6"^^<http://www.w3.org/2001/XMLSchema#integer>;
     <http://schema.org/dateCreated> "2020-02-21T18:00:03.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-25T13:55:29.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/description> "The ultimate example ontology by modom.io"@en;
@@ -38,6 +38,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "dateCreated";
     <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date>;
     <http://www.w3.org/ns/prov#> "http://schema.org/dateCreated".
+:deathDate <http://schema.org/dateCreated> "2020-04-20T16:43:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/dateModified> "2020-04-20T16:43:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://schema.org/description> ""@en;
+    <http://schema.org/name> "death Date"@en;
+    a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> :Person;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://example.org>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "deathDate";
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime>.
 :isNew <http://schema.org/dateCreated> "2020-02-21T17:51:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/dateModified> "2020-02-23T18:49:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://schema.org/description> "Indicates was recently created."@en, "Indique a été créé récemment."@fr;
