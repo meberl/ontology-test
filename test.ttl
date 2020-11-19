@@ -16,7 +16,7 @@
     voaf:propertyNumber "7"^^xs:integer;
     schema:dateCreated "2020-01-17T10:52:04.000Z"^^xs:dateTime;
     schema:dateModified "2020-02-13T19:52:35.000Z"^^xs:dateTime;
-    schema:description "The absolute definitive test ontology.."@en;
+    schema:description "The absolute definitive test ontology. Really!"@en;
     schema:identifier "f35f59c1-5fdb-3986-8fa0-b8762dbe01aa";
     schema:name "Test"@en;
     a rdf:Resource, owl:Ontology;
